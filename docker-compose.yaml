@@ -14,7 +14,8 @@ services:
       - clarusnet
   
   myapp:
-    image: 107691/bookstoreapi:latest
+    #image: 107691/bookstoreapi:latest
+    build: .
     container_name: myapp
     restart: always
     depends_on:
